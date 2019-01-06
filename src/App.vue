@@ -21,19 +21,22 @@
 					</b-col>
 				</b-row>
 			</div>
+			<collapsable-content></collapsable-content>
 		</div>
 
 	</div>
 </template>
 
 <script>
-import bModal from 'bootstrap-vue/es/components/modal/modal';
+import bModal from 'bootstrap-vue/es/components/modal/modal'
 import maquilaHeader from './maquilaHeader.vue'
+import collapsableContent from './collapsableContent.vue'
 
 export default {
 	name: 'app',
 	components: {
-		maquilaHeader
+		maquilaHeader,
+		collapsableContent
 	},
 	data () {
 		return {

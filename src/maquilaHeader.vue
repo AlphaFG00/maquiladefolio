@@ -1,6 +1,5 @@
 <template>
 	<div>
-		
 		<b-navbar toggleable="md" type="dark" variant="dark" sticky>
 
 			<b-navbar-toggle target="nav_collapse"/>
@@ -58,6 +57,6 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	
 </style>
