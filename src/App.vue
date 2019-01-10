@@ -29,8 +29,8 @@
 
 <script>
 import bModal from 'bootstrap-vue/es/components/modal/modal'
-import maquilaHeader from './maquilaHeader.vue'
-import collapsableContent from './collapsableContent.vue'
+import maquilaHeader from './components/maquilaHeader.vue'
+import collapsableContent from './components/collapsableContent.vue'
 
 export default {
 	name: 'app',
@@ -47,28 +47,10 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #2c3e50;
-}
+	//	Estilos de bootstrap
+	@import './assets/scss/overrideBootstrap.scss';
+	@import '~bootstrap/scss/bootstrap.scss';
 
-h1, h2 {
-	font-weight: normal;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-
-a {
-	color: #42b983;
-}
+	//	Mis estilos
+	@import './assets/scss/general.scss';
 </style>
