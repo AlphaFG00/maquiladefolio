@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-navbar toggleable="md" type="dark" variant="dark" sticky>
+		<b-navbar toggleable="md" type="dark" variant="primary" sticky>
 
 			<b-navbar-toggle target="nav_collapse"/>
 			<b-navbar-brand href="#">Maquila de Folio</b-navbar-brand>
@@ -28,6 +28,7 @@
 
 			</b-collapse>
 		</b-navbar>
+		<main-slider/>
 
 		<b-breadcrumb :items="items"/>
 	</div>
@@ -36,6 +37,7 @@
 <script>
 	import bBreadcrumb from 'bootstrap-vue/es/components/breadcrumb/breadcrumb'
 	import { Navbar } from 'bootstrap-vue/es/components'
+	import mainSlider from './mainSlider.vue'
 	
 	export default {
 		data () {
@@ -53,6 +55,9 @@
 					}
 				]
 			}
+		},
+		components: {
+			mainSlider
 		}
 	}
 </script>
