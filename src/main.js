@@ -13,7 +13,7 @@ Vue.use(Layout);
 //	Directivas de prueba. Usar esta como "v-decorar"
 Vue.directive('decorar', {
 	bind(elemento, modificadores, nodo_dom_virtual){
-		elemento.style.fontFamily = "times new roman"
+		elemento.style.fontFamily = modificadores.value
 	}
 })
 
