@@ -12,8 +12,15 @@ Vue.use(Layout);
 
 //	Directivas de prueba. Usar esta como "v-decorar"
 Vue.directive('decorar', {
-	bind(elemento, modificadores, nodo_dom_virtual){
-		elemento.style.fontFamily = modificadores.value
+	bind(elemento, binding, virtual_node){
+		elemento.style.fontFamily = binding.value
+
+		if(binding.modifiers['negritas']){
+			elemento.style.fontWeight = 'bold'
+		}
+		if(binding.modifiers['italica']){
+			elemento.style.fontStyle = 'italic'
+		}
 	}
 })
 

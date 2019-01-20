@@ -1,7 +1,7 @@
 <template>
 	<div class="jumbotron">
 		<b-row>
-			<b-col cols="12" offset="0" v-decorar="'helvetica'">
+			<b-col cols="12" offset="0" v-decorar.italica.negritas="'helvetica'">
 				{{ msg }}
 				<br>
 			</b-col>
