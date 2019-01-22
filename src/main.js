@@ -10,7 +10,9 @@ Vue.use(BootstrapVue)
 Vue.use(Layout);
 
 
-//	Directivas de prueba. Usar esta como "v-decorar"
+/*	Directivas de prueba. Usar esta como "v-decorar"
+ *	Para definir en local, ponemos en directives : {...} del componente
+ */
 Vue.directive('decorar', {
 	bind(elemento, binding, virtual_node){
 		elemento.style.fontFamily = binding.value.familia

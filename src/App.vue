@@ -5,6 +5,8 @@
 		<div class="container">
 			<modal-temp/>
 			<collapsable-content/>
+
+			<formulario/>
 		</div>
 
 	</div>
@@ -15,12 +17,15 @@ import maquilaHeader from './components/maquilaHeader.vue'
 import modalTemp from './components/modalTemp.vue'
 import collapsableContent from './components/collapsableContent.vue'
 
+import formulario from './components/formulario.vue'
+
 export default {
 	name: 'app',
 	components: {
 		maquilaHeader,
 		modalTemp,
-		collapsableContent
+		collapsableContent,
+		formulario
 	}
 }
 </script>
