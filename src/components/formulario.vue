@@ -18,14 +18,14 @@
 											type="text"
 											required
 											placeholder="Mi pleisjolder"
-											v-model="pleisjolder">
+											v-model.trim="usuario.pleisjolder">
 				</b-form-input>
 			</b-form-group>
 			<b-button type="submit" variant="primary">Submit</b-button>
 			<b-button type="reset" variant="danger">Reset</b-button>
 		</b-form>
 		<div>
-			{{ pleisjolder }}
+			{{ usuario.pleisjolder }}
 		</div>
 	</div>
 </template>
@@ -36,7 +36,10 @@
 	export default {
 		data(){
 			return {
-				pleisjolder: ""
+				usuario: {
+					pleisjolder: "",
+					email: ""
+				}
 			}
 		}
 	}
