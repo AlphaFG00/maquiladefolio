@@ -7,6 +7,7 @@
 										description="We'll never share your email with anyone else.">
 				<b-form-input id="exampleInput1"
 											type="email"
+											v-model="usuario.email"
 											required
 											placeholder="Enter email"/>
 			</b-form-group>
@@ -33,11 +34,12 @@
 										 :rows="3"
 										 :max-rows="6"/>
 			</b-form-group>
-			<b-button type="submit" variant="primary">Submit</b-button>
-			<b-button type="reset" variant="danger">Reset</b-button>
+			<b-button type="submit" variant="primary"
+								@click.prevent="enviarFormulario">Enviar</b-button>
 		</b-form>
-		<div>
+		<div v-if="mostrar">
 			<br>
+			Correo: {{ usuario.email }} <br>
 			Valor de campo con Trim: {{ usuario.pleisjolder }} <br>
 			<div>Selected: <strong>{{ usuario.selected }}</strong></div>
 			Contenido del Textarea: <pre class="mt-3">{{ usuario.text }}</pre>
@@ -64,7 +66,13 @@
 						{ value: 'Cuba', text: 'Uffff men 7u7r cerca y barato' },
 						{ value: 'Korea 7u7r', text: 'Paises asiaticos shidos :3' }
 					]
-				}
+				},
+				mostrar: false
+			}
+		},
+		methods: {
+			enviarFormulario(){
+				this.mostrar = true
 			}
 		}
 	}
