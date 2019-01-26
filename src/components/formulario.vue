@@ -73,6 +73,15 @@
 		methods: {
 			enviarFormulario(){
 				this.mostrar = true
+				this.$http.post('https://vue-proof.firebaseio.com/prueba.json', {
+					correo: this.usuario.email,
+					pais: this.usuario.selected,
+					text: this.usuario.text
+				}).then(response => console.log(response))
+				this.usuario.email = ""
+				this.usuario.selected = null
+				this.usuario.text = ""
+				this.usuario.pleisjolder = ""
 			}
 		}
 	}

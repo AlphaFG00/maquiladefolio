@@ -1,13 +1,15 @@
 import Vue from 'vue'
+import VueResource from "vue-resource"
 import BootstrapVue from "bootstrap-vue"
 
 import "bootstrap-vue/dist/bootstrap-vue.css"
-import { Layout } from 'bootstrap-vue/es/components';
+import { Layout } from 'bootstrap-vue/es/components'
 
 import App from './App.vue'
 
+Vue.use(VueResource)
 Vue.use(BootstrapVue)
-Vue.use(Layout);
+Vue.use(Layout)
 
 
 /*	Directivas de prueba. Usar esta como "v-decorar"
