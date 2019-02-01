@@ -5,8 +5,11 @@
 		<div class="container">
 			<modal-temp/>
 			<collapsable-content/>
-
 			<formulario/>
+
+			<div class="jumbotron">
+				<router-view></router-view>
+			</div>
 		</div>
 
 	</div>

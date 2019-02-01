@@ -14,6 +14,9 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(Layout)
 
+const enrutador = new VueRouter({
+	routes: routes
+})
 
 /*	Directivas de prueba. Usar esta como "v-decorar"
  *	Para definir en local, ponemos en directives : {...} del componente
@@ -33,5 +36,6 @@ Vue.directive('decorar', {
 
 new Vue({
   el: '#app',
+  router: enrutador,
   render: h => h(App)
 })
