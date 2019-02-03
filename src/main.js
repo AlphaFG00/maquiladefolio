@@ -15,7 +15,8 @@ Vue.use(BootstrapVue)
 Vue.use(Layout)
 
 const enrutador = new VueRouter({
-	routes: routes
+	routes: routes,
+	mode: 'history' /*	Quita la almohadilla para separar peticiones y router-view.	*/
 })
 
 /*	Directivas de prueba. Usar esta como "v-decorar"
