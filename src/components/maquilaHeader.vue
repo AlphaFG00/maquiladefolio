@@ -10,8 +10,8 @@
 					<b-nav-item href="#">Productos</b-nav-item>
 					<b-nav-item href="#" disabled>Disabled</b-nav-item>
 					<b-nav-item-dropdown text="Post" right>
-						<b-dropdown-item to="/">Terminos y condiciones</b-dropdown-item>
-						<b-dropdown-item to="/formulario">Formulario</b-dropdown-item>
+						<b-dropdown-item to="/" exact>Terminos y condiciones</b-dropdown-item>
+						<b-dropdown-item to="/formulario" exact>Formulario</b-dropdown-item>
 					</b-nav-item-dropdown>
 
 					<b-nav-item-dropdown right>
