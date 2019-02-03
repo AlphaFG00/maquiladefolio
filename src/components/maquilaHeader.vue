@@ -9,11 +9,9 @@
 				<b-navbar-nav>
 					<b-nav-item href="#">Productos</b-nav-item>
 					<b-nav-item href="#" disabled>Disabled</b-nav-item>
-					<b-nav-item-dropdown text="Lenguaje" right>
-						<b-dropdown-item href="#">EN</b-dropdown-item>
-						<b-dropdown-item href="#">ES</b-dropdown-item>
-						<b-dropdown-item href="#">RU</b-dropdown-item>
-						<b-dropdown-item href="#">FA</b-dropdown-item>
+					<b-nav-item-dropdown text="Post" right>
+						<b-dropdown-item to="/">Terminos y condiciones</b-dropdown-item>
+						<b-dropdown-item to="/formulario">Formulario</b-dropdown-item>
 					</b-nav-item-dropdown>
 
 					<b-nav-item-dropdown right>
