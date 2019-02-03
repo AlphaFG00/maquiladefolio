@@ -4,14 +4,9 @@
 
 		<div class="container">
 			<modal-temp/>
-			<collapsable-content/>
-			<formulario/>
-
-			<div class="jumbotron">
-				<router-view></router-view>
-			</div>
+			<router-view></router-view>
 		</div>
-
+		<br>
 	</div>
 </template>
 
