@@ -1,6 +1,8 @@
 <template>
 	<div class="jumbotron">
-		id: {{ id }} <br>
+		<span v-if="id">
+			id: {{ id }}
+		</span><br/>
 		<b-form>
 			<b-form-group id="exampleInputGroup1"
 										label="Email address:"
