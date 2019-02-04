@@ -3,5 +3,5 @@ import collapsableContent from './components/collapsableContent.vue'
 
 export const routes = [
 	{ path:'', component: collapsableContent },
-	{ path:'/formulario', component: formulario }
+	{ path:'/formulario/:id', component: formulario }
 ]

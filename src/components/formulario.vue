@@ -1,5 +1,6 @@
 <template>
 	<div class="jumbotron">
+		id: {{ id }} <br>
 		<b-form>
 			<b-form-group id="exampleInputGroup1"
 										label="Email address:"
@@ -67,7 +68,8 @@
 						{ value: 'Korea 7u7r', text: 'Paises asiaticos shidos :3' }
 					]
 				},
-				mostrar: false
+				mostrar: false,
+				id: this.$route.params.id
 			}
 		},
 		methods: {
