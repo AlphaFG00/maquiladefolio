@@ -5,7 +5,9 @@
 		<div class="container">
 			<modal-temp/>
 			<router-view></router-view>
+			<social-buttons></social-buttons>
 		</div>
+
 		<br>
 	</div>
 </template>
@@ -14,6 +16,7 @@
 import maquilaHeader from './components/maquilaHeader.vue'
 import modalTemp from './components/modalTemp.vue'
 import collapsableContent from './components/collapsableContent.vue'
+import socialButtons from './components/socialButtons.vue'
 
 import formulario from './components/formulario.vue'
 
@@ -23,7 +26,8 @@ export default {
 		maquilaHeader,
 		modalTemp,
 		collapsableContent,
-		formulario
+		formulario,
+		socialButtons
 	}
 }
 </script>
