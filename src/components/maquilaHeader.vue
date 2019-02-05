@@ -20,14 +20,8 @@
 							<b-dropdown-item href="#">ISO-5001</b-dropdown-item>
 							<b-dropdown-item href="#">Norma-Shida</b-dropdown-item>
 						</b-nav-item-dropdown>
-						<b-nav-item href="https://www.facebook.com/maquila.defolio" target="_blank" right>
-							<font-awesome-icon :icon="['fab', 'facebook-square']"></font-awesome-icon>
-						</b-nav-item>
-						<b-nav-item href="https://www.instagram.com/hazalnhr" target="_blank" right>
-							<font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon>
-						</b-nav-item>
-						<b-nav-item href="https://twitter.com/MadeWithVueJS" target="_blank" right>
-							<font-awesome-icon :icon="['fab', 'twitter']"></font-awesome-icon>
+						<b-nav-item v-for="(icon, indice) in icons" :key="indice" :href="icon.href" target="_blank" right>
+							<font-awesome-icon :icon="['fab', icon.icon]"></font-awesome-icon>
 						</b-nav-item>
 					</b-navbar-nav>
 				</b-collapse>
@@ -67,6 +61,18 @@
 					}, {
 						text: 'Library',
 						active: true
+					}
+				],
+				icons: [
+					{
+						href: "https://www.facebook.com/maquila.defolio",
+						icon: "facebook-square"
+					},{
+						href: "https://www.instagram.com/hazalnhr",
+						icon: "instagram"
+					},{
+						href: "https://twitter.com/MadeWithVueJS",
+						icon: "twitter"
 					}
 				]
 			}
