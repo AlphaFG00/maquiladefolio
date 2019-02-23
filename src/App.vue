@@ -1,36 +1,31 @@
 <template>
 	<div id="app">
-		<maquila-header/>
+		<main-header></main-header>
 
-		<div class="container">
-			<router-view></router-view>
+		<div class="container-fluid">
+			<router-view/>
 		</div>
 
-		<br>
+		<div id="nav">
+			<router-link to="/">Home</router-link> |
+			<router-link to="/about">About</router-link> |
+			<router-link to="/terminos">Terminos y condiciones</router-link>
+		</div>
 	</div>
 </template>
 
 <script>
-import maquilaHeader from './components/maquilaHeader.vue'
-import collapsableContent from './components/collapsableContent.vue'
+	import mainHeader from '@/components/mainHeader.vue'
 
-import formulario from './components/formulario.vue'
-
-export default {
-	name: 'app',
-	components: {
-		maquilaHeader,
-		collapsableContent,
-		formulario
+	export default {
+		components: {
+			'main-header': mainHeader
+		}
 	}
-}
 </script>
 
 <style lang="scss">
-	//	Estilos de bootstrap
-	@import './assets/scss/overrideBootstrap.scss';
-	@import '~bootstrap/scss/bootstrap.scss';
-
-	//	Mis estilos
-	@import './assets/scss/general.scss';
+	@import '@/assets/scss/overrideBootstrap.scss';
+	@import 'bootstrap/scss/bootstrap.scss';
+	@import '@/assets/scss/general.scss'
 </style>
