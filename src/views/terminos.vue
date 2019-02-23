@@ -1,8 +1,8 @@
 <template>
-	<div>
-		ksdkjfhdkhfskhfks puto
+	<b-col>
+		<router-view></router-view>
 		<collapsable-content></collapsable-content>
-	</div>
+	</b-col>
 </template>
 
 <script>

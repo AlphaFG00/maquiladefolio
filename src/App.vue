@@ -2,14 +2,17 @@
 	<div id="app">
 		<main-header></main-header>
 
-		<div class="container-fluid">
-			<router-view/>
-		</div>
+		<b-container fluid>
+			<b-row>
+				<router-view/>
+			</b-row>
+		</b-container>
 
 		<div id="nav">
 			<router-link to="/">Home</router-link> |
 			<router-link to="/about">About</router-link> |
-			<router-link to="/terminos">Terminos y condiciones</router-link>
+			<router-link to="/terminos">Terminos y condiciones</router-link> |
+			<router-link to="/terminos/hijo">Hijo</router-link>
 		</div>
 	</div>
 </template>

@@ -27,8 +27,8 @@
 				</b-collapse>
 			</div>
 		</b-navbar>
-		<main-slider></main-slider>
-		<b-breadcrumb :items="items"></b-breadcrumb>
+		<!-- <main-slider></main-slider>
+		<b-breadcrumb :items="items"></b-breadcrumb> -->
 	</div>
 </template>
 
@@ -41,7 +41,7 @@
 	import bNavItemDropdown from 'bootstrap-vue/es/components/nav/nav-item-dropdown'
 	import bDropdownItem from 'bootstrap-vue/es/components/dropdown/dropdown-item'
 	import bCollapse from 'bootstrap-vue/es/components/collapse/collapse'
-	import bBreadcrumb from 'bootstrap-vue/es/components/breadcrumb/breadcrumb'
+	// import bBreadcrumb from 'bootstrap-vue/es/components/breadcrumb/breadcrumb'
 	import bNavItem from 'bootstrap-vue/es/components/nav/nav-item'
 
 	/*	Font Awesome - Paquetes de iconos disponibles
@@ -55,7 +55,7 @@
 	library.add( faFacebookF, faFacebookSquare, faInstagram, faTwitter )
 
 	//	imports propios
-	import mainSlider from '@/components/mainSlider.vue'
+	//import mainSlider from '@/components/mainSlider.vue'
 
 	export default {
 		data () {
@@ -87,7 +87,7 @@
 			}
 		},
 		components: {
-			'main-slider': mainSlider,
+			//'main-slider': mainSlider,
 			'font-awesome-icon': FontAwesomeIcon,
 			'b-navbar': bNavbar,
 			'b-navbar-toggle': bNavbarToggle,
@@ -96,7 +96,7 @@
 			'b-nav-item-dropdown': bNavItemDropdown,
 			'b-dropdown-item': bDropdownItem,
 			'b-collapse': bCollapse,
-			'b-breadcrumb': bBreadcrumb,
+			//'b-breadcrumb': bBreadcrumb,
 			'b-nav-item': bNavItem
 		}
 	}

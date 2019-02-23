@@ -1,7 +1,7 @@
 <template>
-	<div class="about">
+	<b-col class="about">
 		componente de prueba
-	</div>
+	</b-col>
 </template>
 
 <script>
