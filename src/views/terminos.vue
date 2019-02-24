@@ -1,8 +1,8 @@
 <template>
-	<b-col>
+	<b-row>
 		<router-view></router-view>
 		<collapsable-content></collapsable-content>
-	</b-col>
+	</b-row>
 </template>
 
 <script>

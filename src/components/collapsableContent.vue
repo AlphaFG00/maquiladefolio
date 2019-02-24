@@ -1,5 +1,5 @@
 <template>
-	<div role="tablist">
+	<b-col cols="12" md="8" role="tablist">
 		<b-card no-body class="mb-1" v-for="(dataset, index) of datasets" :key="index">
 			<b-card-header header-tag="header" class="p-1" role="tab" @click="dataset.isActive = !dataset.isActive">
 				<b-button block href="#" v-b-toggle="index + ''" variant="primary">
@@ -18,7 +18,7 @@
 				</b-card-body>
 			</b-collapse>
 		</b-card>
-	</div>
+	</b-col>
 </template>
 <script>
 	import bCollapse from 'bootstrap-vue/es/components/collapse/collapse'

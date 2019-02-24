@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
 import Terminos from '@/views/terminos.vue'
-import hijo from '@/components/hijo.vue'
+import promociones from '@/components/promociones.vue'
 
 Vue.use(Router)
 
@@ -21,9 +21,9 @@ export default new Router({
 			component: Terminos,
 			children: [
 				{
-					path: 'hijo',
-					name: 'hijo',
-					component: hijo
+					path: 'promociones',
+					name: 'promociones',
+					component: promociones
 				}
 			]
 		},

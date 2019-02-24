@@ -3,16 +3,14 @@
 		<main-header></main-header>
 
 		<b-container fluid>
-			<b-row>
-				<router-view/>
-			</b-row>
+			<router-view/>
 		</b-container>
 
 		<div id="nav">
 			<router-link to="/">Home</router-link> |
 			<router-link to="/about">About</router-link> |
 			<router-link to="/terminos">Terminos y condiciones</router-link> |
-			<router-link to="/terminos/hijo">Hijo</router-link>
+			<router-link to="/terminos/promociones">Hijo</router-link>
 		</div>
 	</div>
 </template>
