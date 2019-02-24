@@ -3,7 +3,11 @@
 		<b-navbar toggleable="md" type="dark" variant="primary" sticky>
 			<div class="container-fluid">
 				<b-navbar-toggle target="nav_collapse"/>
-				<b-navbar-brand to="/">Maquila de Folio</b-navbar-brand>
+				<b-navbar-brand to="/">
+					<img src="../../public/maquila-logo.svg" height="40px" width="80px" alt="Maquila-logo">
+					<img src="../../public/maquila-white.svg" height="60px" width="80px" alt="Maquila-logo">
+					Maquila de Folio
+				</b-navbar-brand>
 				
 				<b-collapse is-nav id="nav_collapse">
 					<b-navbar-nav class="ml-auto">
